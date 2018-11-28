@@ -9,6 +9,7 @@ public class TcrTest {
     @Test
     public void t() {
         assertTrue(true);
+        assertTrue(true);
     }
 
 }
