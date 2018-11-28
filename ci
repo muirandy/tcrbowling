@@ -1,6 +1,6 @@
 #!/bin/bash
 while(true);
  do
- git pull --rebase --autostash;
+ git pull --rebase;
  git push;
  done;
