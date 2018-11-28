@@ -2,13 +2,13 @@ package com.github.muirandy.tcr.bowling;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TcrTest {
 
     @Test
     public void t() {
-        assertFalse(false);
+        assertTrue(true);
     }
 
 }
