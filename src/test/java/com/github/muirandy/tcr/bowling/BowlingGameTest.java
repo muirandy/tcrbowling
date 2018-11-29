@@ -25,4 +25,9 @@ public class BowlingGameTest {
         assertEquals(20, game.score());
     }
 
+    @Test
+    void t() {
+        roll(20, 2);
+        assertEquals(40, game.score());
+    }
 }
