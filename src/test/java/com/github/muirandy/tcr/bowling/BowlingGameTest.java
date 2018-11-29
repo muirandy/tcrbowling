@@ -26,8 +26,11 @@ class BowlingGameTest {
     }
 
     @Test
-    void t() {
-        roll(20, 2);
-        assertEquals(40, game.score());
+    void oneSpare() {
+        roll(1, 6);
+        roll(1, 4);
+        roll(1, 2);
+        roll(17, 0);
+        assertEquals(14, game.score());
     }
 }
