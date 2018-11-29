@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BowlingGameTest {
+class BowlingGameTest {
 
     private BowlingGame game = new BowlingGame();
 
@@ -14,13 +14,13 @@ public class BowlingGameTest {
     }
 
     @Test
-    public void gutterGame() {
+    void gutterGame() {
         roll(20, 0);
         assertEquals(0, game.score());
     }
 
     @Test
-    public void allOnes() {
+    void allOnes() {
         roll(20, 1);
         assertEquals(20, game.score());
     }
