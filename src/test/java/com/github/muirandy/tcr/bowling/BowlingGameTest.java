@@ -13,6 +13,15 @@ class BowlingGameTest {
             game.roll(pinsPerRoll);
     }
 
+    private void rollSpare() {
+        roll(1, 6);
+        roll(1, 4);
+    }
+
+    private void rollStrike() {
+        roll(1, 10);
+    }
+
     @Test
     void gutterGame() {
         roll(20, 0);
@@ -27,8 +36,7 @@ class BowlingGameTest {
 
     @Test
     void oneSpare() {
-        roll(1, 6);
-        roll(1, 4);
+        rollSpare();
         roll(1, 2);
         roll(17, 0);
         assertEquals(14, game.score());
@@ -36,7 +44,7 @@ class BowlingGameTest {
 
     @Test
     public void oneStrike() {
-        roll(1, 10);
+        rollStrike();
         roll(1, 2);
         roll(1, 3);
         roll(16, 0);
